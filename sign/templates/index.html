@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Django Page</title>
+    </head>
+    <body>
+        <form method='post' action='/login_action/'>
+            <input type='text' name='username' placeholder='用户名'><br/>
+            <input type='text' name='password' placeholder='密码'><br/>
+            {{error}}<br/>
+            <button id='login' type='submit'>登陆</button>
+            {%  csrf_token  %}
+            </form>
+    </body>
+</html>
